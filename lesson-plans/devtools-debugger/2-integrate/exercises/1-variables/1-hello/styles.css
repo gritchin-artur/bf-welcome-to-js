@@ -5,3 +5,7 @@
   height: 5em;
   width: 20em;
 }
+
+#bye-output {
+  color: red;
+}
