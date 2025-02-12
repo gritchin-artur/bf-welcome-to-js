@@ -3,20 +3,24 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: Uncaught ReferenceError
+  message: welf is not defined
 
-  location:
+  location: line 20
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: variable is not declare
 
-  the fix(es):
+  the fix(es): declare a variable
 */
 
-welf = 'ingrad';
+// welf = 'ingrad';
+
+// console.log(welf);
+
+let welf = 'ingrad';
 
 console.log(welf);
