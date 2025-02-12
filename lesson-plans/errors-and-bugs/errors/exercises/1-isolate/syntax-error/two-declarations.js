@@ -3,20 +3,24 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Failed to execute 'appendChild' on 'Node': Identifier 'tree' has already been declared
 
-  location:
+  location: line 22
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: reassigning a variable, re-declaring it again
 
-  the fix(es):
+  the fix(es): delete let on line 22
 */
+
+// let tree = 'oak';
+
+// let tree = 'birch';
 
 let tree = 'oak';
 
-let tree = 'birch';
+tree = 'birch';

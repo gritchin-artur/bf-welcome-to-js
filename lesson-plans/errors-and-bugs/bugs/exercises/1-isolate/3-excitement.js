@@ -9,9 +9,9 @@
 
 
   experiment 1
-    line:
-    why:
-    trying:
+    line: 25
+    why: with a new iteration the "exited" variable is overwrritten
+    trying: shoud add "excited" to the beginning of the value
 
 */
 
@@ -22,7 +22,8 @@ while (text === null) {
 
 let excited = '';
 for (const character of text) {
-  excited = character + '!';
+  // excited = character + '!';
+  excited = excited + character + '!';
 }
 
 alert(excited);

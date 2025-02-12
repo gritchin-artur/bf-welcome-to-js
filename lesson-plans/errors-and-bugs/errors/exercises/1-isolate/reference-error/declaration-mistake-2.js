@@ -3,28 +3,43 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: Uncaught ReferenceError
+  message: Cannot access 'isValidUserName' before initialization
 
-  location:
+  location: line 24
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: The 'isValidUserName' variable is located after you have declared it.
 
-  the fix(es):
+  the fix(es): 'let isValidUserName' moove above the assign line
 */
+
+// const userName = 'chiobin';
+// console.log('userName:', typeof userName, userName);
+
+// if (userName.length > 3) {
+//   isValidUserName = true;
+// }
+
+// let isValidUserName;
+
+// if (userName.length <= 3) {
+//   isValidUserName = false;
+// }
+
+// console.log('isValidUserName:', typeof isValidUserName, isValidUserName);
 
 const userName = 'chiobin';
 console.log('userName:', typeof userName, userName);
 
+let isValidUserName;
+
 if (userName.length > 3) {
   isValidUserName = true;
 }
-
-let isValidUserName;
 
 if (userName.length <= 3) {
   isValidUserName = false;

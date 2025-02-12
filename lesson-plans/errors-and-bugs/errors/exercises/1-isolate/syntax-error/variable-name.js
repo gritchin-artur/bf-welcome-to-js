@@ -1,27 +1,21 @@
-
-
 'use strict';
 
 console.log('--- in execution phase ---');
 
-
-
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Failed to execute 'appendChild' on 'Node': Unexpected number
 
-  location:
+  location: line 25
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: variable name cannot be a number
 
-  the fix(es):
+  the fix(es): change number to string
 */
 
-
-const 3 = 'three';
-
-
+// const 3 = 'three';
+const three = 'three';

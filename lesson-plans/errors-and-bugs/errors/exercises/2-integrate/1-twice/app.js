@@ -6,18 +6,18 @@ import {
 } from '../../../../../../../lib/dom-io/index.js';
 
 /*
-  environment:
+  environment: chrome
 
-  name:
+  name: SyntaxError
   message:
 
-  location:
+  location: line 32
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: the variable has no declared value
 
-  the fix(es):
+  the fix(es): instead of plus it shoud be equal
 */
 
 whenFormDataChanges('user-data', () => {
@@ -29,7 +29,8 @@ whenFormDataChanges('user-data', () => {
 
   // --- repeat the text ---
 
-  let repeated + text + '\n' + text;
+  // let repeated + text + '\n' + text;
+  let repeated = text + '\n' + text;
 
   // --- display the repeated text ---
 

@@ -1,25 +1,22 @@
-
-
 'use strict';
 
 console.log('--- in execution phase ---');
 
-
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Failed to execute 'appendChild' on 'Node': Unexpected string
 
-  location:
+  location: line 23
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: using three separate parts of text in with one value
 
-  the fix(es):
+  the fix(es): use " " to separate "i can do this!"
 */
 
-const quotesInQuotes = 'remind yourself ''i can do this!'' at least once a day';
+// const quotesInQuotes = 'remind yourself ''i can do this!'' at least once a day';
 
-
+const quotesInQuotes = 'remind yourself "i can do this!" at least once a day';
