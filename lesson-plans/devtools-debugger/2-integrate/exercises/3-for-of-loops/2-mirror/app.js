@@ -1,4 +1,4 @@
-import {
+/*import {
   whenFormDataChanges,
   readString,
   displayString,
@@ -23,7 +23,7 @@ whenFormDataChanges('input', () => {
   // --- display the result ---
 
   displayString('output', mirrored);
-});
+}); */
 
 /*  ===== Challenges =====
 
@@ -39,3 +39,32 @@ whenFormDataChanges('input', () => {
       you will need to add an input to the HTML file
 
 */
+
+import {
+  whenFormDataChanges,
+  readString,
+  displayString,
+} from '../../../../../../lib/dom-io/index.js';
+
+whenFormDataChanges('input', () => {
+  debugger;
+
+  console.log('--- form data changed ---');
+
+  // --- read the user's input ---
+
+  let userText = readString('to-mirror');
+
+  let character = readString('character-in-middle');
+
+  // --- mirror the text ---
+
+  let mirrored = character === '' ? ' | ' : ` ${character} `;
+  for (let char of userText) {
+    mirrored = char.toLocaleUpperCase() + mirrored + char.toLocaleLowerCase();
+  }
+
+  // --- display the result ---
+
+  displayString('output', mirrored);
+});
