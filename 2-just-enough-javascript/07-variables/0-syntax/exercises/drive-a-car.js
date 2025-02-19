@@ -5,17 +5,12 @@
 
 'use strict';
 
+let phrase = 'drive'; // declaration and initialization
 
-let phrase = 'drive';
+phrase = phrase + ' a'; // variable reassignment
 
+phrase = phrase + ' car'; // variable reassignment again
 
-phrase = phrase + ' a';
-
-
-phrase = phrase + ' car';
-
-
-console.log(phrase === 'drive a car');
-
+console.log(phrase === 'drive a car'); // reading and comparison
 
 }

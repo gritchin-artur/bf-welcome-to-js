@@ -23,3 +23,30 @@
       '0 . x . 0'         -> '0 . X . 0'
 
 */
+
+let input = '';
+
+while (input === '') {
+  input = prompt('Enter some text:');
+
+  if (input === '') {
+    alert('no empty input, try again.');
+  }
+}
+
+let output = '';
+let i = 0;
+
+for (let char of input) {
+  if (/[^\p{L}]/u.test(char)) {
+    output += char;
+    continue;
+  } else if (i % 2) {
+    output += char.toLowerCase();
+  } else {
+    output += char.toUpperCase();
+  }
+  i++;
+}
+
+alert(output);

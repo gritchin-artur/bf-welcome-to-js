@@ -5,11 +5,11 @@
 /*
 
 
-  Data In:
+  Data In: what is your favorite color
 
-  Data Out:
+  Data Out: 'is this correct? "' + input + '"'
 
-  Test Cases:
+  Test Cases: input === null
 
 */
 
@@ -36,3 +36,23 @@
 /* ---   ?   --- */
 
 // alert(message)
+
+let message = 'your favorite color is ';
+
+let unconfirmed = true;
+
+while (unconfirmed) {
+  let input = prompt('what is your favorite color?');
+  let confirmed = '';
+
+  if (input === null) {
+    alert('there is no escape');
+  } else {
+    confirmed = confirm('is this correct? "' + input + '"');
+  }
+
+  if (confirmed === true) {
+    message = message + input;
+    unconfirmed = false;
+  }
+}

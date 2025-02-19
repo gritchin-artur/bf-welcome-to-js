@@ -24,11 +24,29 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let input = '';
+let output = '';
+let pattern = /[^a-z]/i;
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+  input = prompt('Enter some text (letters only):');
+
+  if (input === null || input === '') {
+    continue;
+  }
+
+  if (pattern.test(input)) {
+    alert('Only letters are allowed! Try again.');
+    continue;
+  }
+
+  output = input;
+  break;
+}
+
+console.log('Final output:', output);
 
 /* --- alert the result --- */
 

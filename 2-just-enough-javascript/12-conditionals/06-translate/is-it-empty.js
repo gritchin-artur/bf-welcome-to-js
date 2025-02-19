@@ -5,11 +5,12 @@
 /*
 
 
-  Data In:
+  Data In: enter something
 
-  Data Out:
+  Data Out: message
 
-  Test Cases:
+  Test Cases: if enter nothing, you will recive the message 'your input is ',
+  if enter something, you will recive the message 'your input is not empty'
 
 */
 
@@ -37,3 +38,20 @@
 /* ---   ?   --- */
 
 // alert(message)
+
+let input = prompt('do whatever you want');
+
+let message = 'your input is ';
+
+if (input === null) {
+  message = message + 'null';
+}
+
+let maybeNot = ' ';
+
+if (input.length !== 0) {
+  maybeNot = 'not ';
+  message = message + maybeNot + 'empty';
+}
+
+alert(message);

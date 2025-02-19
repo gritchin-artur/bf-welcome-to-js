@@ -7,3 +7,9 @@ let backwards = 'tpircsavaj';
 let language = '';
 
 // log each character in `language`
+
+for (let letter of backwards) {
+  language = letter + language;
+}
+
+console.log(language);

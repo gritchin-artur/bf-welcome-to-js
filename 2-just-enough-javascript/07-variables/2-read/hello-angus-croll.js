@@ -2,14 +2,14 @@
 
 'use strict';
 
-let first = 'angus';
-let last = 'croll';
+let first = 'angus'; // declaration and initialization
+let last = 'croll'; // declaration and initialization
 
-let greeting = 'hello ' + first + ' ' + last;
+let greeting = 'hello ' + first + ' ' + last; // declaration and initialization
 
-greeting = greeting + '!';
+greeting = greeting + '!'; // reassignment variable
 
-console.log(greeting); // 'hello angus croll!'
+console.log(greeting); // reading variable 'hello angus croll!'
 
 /*
   - mark each variable use with a different color (like in the ?variables lens)

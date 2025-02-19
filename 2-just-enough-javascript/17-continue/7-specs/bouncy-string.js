@@ -28,17 +28,35 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
+let input = '';
+let pattern = /[^a-z]/i;
+while (true) {
+  input = prompt('Enter text to see bouncy string:');
+
+  if (pattern.test(input)) {
+    continue;
+  }
+
+  if (input) {
+    break;
+  }
+}
 console.log('input:', input);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
+let i = 0;
 
 /* --- create final output --- */
 
-for (let _ of _) {
+for (let char of input) {
+  if (i % 2) {
+    output += char.toUpperCase();
+  } else {
+    output += char.toLowerCase();
+  }
+  i++;
 }
 
 /* --- alert the result --- */

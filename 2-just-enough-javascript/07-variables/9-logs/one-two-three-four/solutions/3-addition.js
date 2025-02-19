@@ -2,13 +2,13 @@
 
 let number = 1;
 
-__;
+number = NaN;
 
-__;
-__;
+let letter = 'a';
+letter = 'b';
 
-__;
-__;
+let boolean = true;
+boolean = false;
 
-__;
-__;
+let object = null;
+object = {};

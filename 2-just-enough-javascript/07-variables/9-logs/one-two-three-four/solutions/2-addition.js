@@ -2,14 +2,14 @@
 
 let number = 0;
 
-__;
-__;
+number = NaN;
+console.log(number);
 
-__;
-__;
+let letter = 'a';
+console.log(letter);
 
-__;
-__;
+let boolean = true;
+console.log(boolean);
 
-__;
-__;
+let object = null;
+console.log(object);

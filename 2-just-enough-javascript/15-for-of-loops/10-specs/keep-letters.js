@@ -26,21 +26,26 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
+let input = null;
+while (input === null || input === '') {
+  input = prompt('Enter some text:');
+}
 console.log('input:', input);
 
 /* --- declare characters to keep --- */
 
-let toKeep = _;
+let toKeep = '';
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-for (let _ of _) {
+for (let char of input) {
+  if (input === ' ' || /^[a-zA-Z]+$/.test(char)) {
+    output += char;
+  }
 }
 
 /* --- alert the result --- */

@@ -1,11 +1,11 @@
 'use strict';
 
-__;
+let first = 1;
 console.log(first);
 
-__;
+let last = 2;
 console.log(last);
 
-console.log(__ + __);
+console.log(first + last); // 3
 
-console.log(__ + __ + _);
+console.log(first + last + 3); // 6

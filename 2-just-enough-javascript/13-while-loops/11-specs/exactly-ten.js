@@ -23,17 +23,24 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = prompt('Type text 10 characters long:');
 
 /* --- create final output --- */
 
-while (_) {}
+while (output === null) {
+  output = prompt('Type something:');
+}
 
 /* --- alert the result --- */
 
-console.log('output:', output);
-alert(output);
-
+if (output.length < 10) {
+  alert(`Your text ${output} is too short!`);
+} else if (output.length > 10) {
+  alert(`Your text ${output} is too long!`);
+} else {
+  console.log('output:', output);
+  alert(output);
+}
 console.log('--- end program ---');
 
 /*

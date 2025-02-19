@@ -5,11 +5,11 @@
 /* Cat Detector
 
 
-  Data In:
+  Data In: please enter "cat"
 
-  Data Out:
+  Data Out: message 'thank you for the cat'
 
-  Test Cases:
+  Test Cases: input !== 'cat'
 
 
 */
@@ -35,3 +35,19 @@
 /* --- ? --- */
 
 // alert(message)
+
+let input = null;
+
+while (input === null) {
+  input = prompt('please enter "cat"');
+}
+
+let message = '';
+
+if (input !== 'cat') {
+  message = '"' + input + '" is not a cat';
+} else {
+  message = 'thank you for the cat';
+}
+
+alert(message);

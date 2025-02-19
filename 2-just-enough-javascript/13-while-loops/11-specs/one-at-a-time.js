@@ -20,11 +20,24 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = prompt('Please enter some text:');
 
 /* --- create final output --- */
 
-while (_) {}
+while (output === null || output === '' || output.length > 1) {
+  if (output === null) {
+    alert('You must enter something!');
+    output = prompt('Please enter some text:');
+  } else if (output === '') {
+    alert("You can't enter empty string!");
+    output = prompt('Please enter some text:');
+  } else if (output.length > 1) {
+    alert('Your text is longer than 1 character!');
+    output = prompt('Please enter some text:');
+  }
+}
+
+output = prompt(`Great you enter "${output}"!`);
 
 /* --- alert the result --- */
 

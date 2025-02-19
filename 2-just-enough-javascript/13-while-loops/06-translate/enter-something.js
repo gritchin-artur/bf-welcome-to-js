@@ -5,11 +5,11 @@
 /*
 
 
-  Data In:
+  Data In: enter something
 
-  Data Out:
+  Data Out: message 'thank you for something!'
 
-  Test Cases:
+  Test Cases: input === ''
 
 */
 
@@ -34,3 +34,19 @@
 /* ---   ?   --- */
 
 // alert(output)
+
+let input = null;
+
+while (input === null) {
+  input = prompt('enter something');
+}
+
+let output = '';
+
+if (input === '') {
+  output = 'you entered nothing :(';
+} else {
+  output = 'thank you for something!';
+}
+
+alert(output);

@@ -2,13 +2,14 @@
 
 /* Reverse
 
-  Data In:
+  Data In: enter some text to reverse
 
 
-  Data Out:
+  Data Out: you will receive a reverse text
 
 
   Test Cases:
+  '12345' -> '54321'
 
 
 */

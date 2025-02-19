@@ -5,11 +5,11 @@
 /* Be Curious
 
 
-  Data In:
+  Data In: enter something, it will become curious
 
-  Data Out:
+  Data Out: need to find a question
 
-  Test Cases:
+  Test Cases: input[input.length - 1] !== '?'
 
 */
 
@@ -30,3 +30,19 @@
 /* ---  ?  --- */
 
 // alert(output)
+
+let input = null;
+
+while (input === null) {
+  input = prompt('enter something, it will become curious');
+}
+
+let output = '';
+
+if (input[input.length - 1] !== '?') {
+  output = "it isn't a question!";
+} else {
+  output = "it's a question!";
+}
+
+alert(output);

@@ -2,10 +2,11 @@
 
 let language = ' j a v a s c r i p t';
 
-let logIt = __;
+let logIt = '';
 
-for (let _ of _) {
-  if (_) {
+for (let letter of language) {
+  if (letter !== ' ') {
+    logIt += letter;
   }
-  __;
+  console.log(logIt);
 }

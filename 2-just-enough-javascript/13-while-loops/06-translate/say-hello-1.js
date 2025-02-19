@@ -5,11 +5,11 @@
 /*
 
 
-  Data In:
+  Data In: say hello
 
-  Data Out:
+  Data Out: input !== 'hello'
 
-  Test Cases:
+  Test Cases: alert('hello to you too!');
 
 */
 
@@ -20,3 +20,11 @@
 // :END WHILE
 
 // alert('hello to you too!')
+
+let input = '';
+
+while (input !== 'hello') {
+  input = prompt('say hello');
+}
+
+alert('hello to you too!');

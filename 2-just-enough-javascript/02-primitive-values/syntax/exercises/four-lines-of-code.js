@@ -6,16 +6,16 @@
 'use strict';
 
 
-console.log('hello');
+console.log('hello'); // hello
 
 
-console.log(true);
+console.log(true); //true
 
 
-console.log();
+console.log(); // nothing
 
 
-console.log('are you hungry?', false);
+console.log('are you hungry?', false); // are you hungry?, false
 
 
 }

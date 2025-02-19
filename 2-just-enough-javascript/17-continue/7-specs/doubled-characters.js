@@ -25,17 +25,31 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
+let input = '';
+let pattern = /[^a-z]/i;
+
+while (true) {
+  input = prompt('Enter text to see doubled letter');
+
+  if (pattern.test(input)) {
+    continue;
+  }
+
+  if (input) {
+    break;
+  }
+}
+
 console.log('input:', input);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-for (let _ of _) {
+for (let char of input) {
+  output += char + char;
 }
 
 console.log('output:', output);

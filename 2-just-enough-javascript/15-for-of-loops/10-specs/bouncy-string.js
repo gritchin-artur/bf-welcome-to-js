@@ -27,17 +27,27 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
+let input = null;
+while (input === null || input === '' || /[^\p{L}]/u.test(input)) {
+  input = prompt('Enter just a text:');
+}
 console.log('input:', input);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-for (let _ of _) {
+let i = 0;
+
+for (let char of input) {
+  if (i % 2) {
+    output += char.toUpperCase();
+  } else {
+    output += char.toLowerCase();
+  }
+  i++;
 }
 
 /* --- alert the result --- */

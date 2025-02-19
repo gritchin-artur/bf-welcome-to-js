@@ -37,17 +37,35 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let text = prompt(_);
+let text = prompt('enter first value:');
 console.log('text:', text);
 
-let query = prompt(_);
+let query = prompt('enter second value:');
 console.log('query:', query);
 
 /* --- declare initial output --- */
 
-let output = _;
-
+let output = '';
+console.log(text, output);
 /* --- create final output --- */
+
+if (
+  (text === null && query === null) ||
+  (text === null && text === '') ||
+  (query === null && query === '')
+) {
+  output = ':(';
+} else if (text === '' && query.length > 0) {
+  output = `"${text}" does not include "${query}"`;
+} else if (text.length > 0 && query === '') {
+  output = `"${text}" does include "${query}"`;
+} else if (text.includes(query)) {
+  output = `"${text}" does include "${query}"`;
+} else if (!text.includes(query)) {
+  output = `"${text}" does not include "${query}"`;
+} else {
+  output = ':(';
+}
 
 /* --- alert the result --- */
 

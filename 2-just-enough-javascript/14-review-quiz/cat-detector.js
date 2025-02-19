@@ -6,13 +6,13 @@
   and lets them know if they did input a cat or not.
 
   Data In:
-    ???
+    prompt('please enter "cat"');
 
   Data Out:
-    ???
+    alert('thank you for the cat');
 
   Test Cases:
-    ???
+    input !== 'cat'
 
 
   PS. try the "ask me" button!

@@ -2,15 +2,15 @@
 
 'use strict';
 
-let phrase = 'a';
+let phrase = 'a'; // declaration and initialization
 
-phrase = ' ' + phrase + ' ';
+phrase = ' ' + phrase + ' '; // reassignment variable and padding
 
-phrase = phrase + 'car';
+phrase = phrase + 'car'; // reassignment variable and padding
 
-phrase = 'drive' + phrase;
+phrase = 'drive' + phrase; // reassignment variable and padding
 
-console.log(phrase); // 'drive a car'
+console.log(phrase); // reading variable 'drive a car'
 
 /*
   - mark each variable use with a different color (like in the ?variables lens)
