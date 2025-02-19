@@ -24,11 +24,29 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+  output = prompt('Enter text 10 characters long:');
+
+  if (!output) {
+    continue;
+  }
+
+  if (output.length < 10) {
+    alert(`Your text is ${10 - output.length} characters shorter!`);
+    continue;
+  }
+
+  if (output.length > 10) {
+    alert(`Your text is ${output.length - 10} characters longer!`);
+    continue;
+  }
+
+  break;
+}
 
 /* --- alert the result --- */
 

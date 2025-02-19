@@ -2,14 +2,14 @@
 
 let favoriteLanguage;
 
-_;
-console.log(favoriteLanguage);
+favoriteLanguage = 1;
+console.log(favoriteLanguage); // 1
 
-_;
-console.log(favoriteLanguage);
+favoriteLanguage = favoriteLanguage + 1;
+console.log(favoriteLanguage); // 2
 
-_;
-console.log(favoriteLanguage);
+favoriteLanguage = favoriteLanguage + 1;
+console.log(favoriteLanguage); // 3
 
-_;
-console.log(favoriteLanguage);
+favoriteLanguage = favoriteLanguage + 1;
+console.log(favoriteLanguage); // 4

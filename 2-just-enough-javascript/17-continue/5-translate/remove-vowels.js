@@ -5,11 +5,11 @@
 /*
 
 
-  Data In:
+  Data In: enter some letters
 
-  Data Out:
+  Data Out: removed all vowels
 
-  Test Cases:
+  Test Cases: 'qwerty -> qwrty'
 
 */
 
@@ -35,3 +35,22 @@
 /* ---   ?   --- */
 
 // alert(letters + ' -> ' + noVowels)
+
+let letters = null;
+
+while (letters === null) {
+  {
+    letters = prompt('enter some letters');
+  }
+}
+
+let noVowels = '';
+
+for (let character of letters) {
+  if ('aeiouAEIOU'.includes(character)) {
+    continue;
+  }
+  noVowels = noVowels + character;
+}
+
+alert(letters + ' -> ' + noVowels);

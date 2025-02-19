@@ -2,13 +2,15 @@
 
 /* Flip Five
 
-  Data In:
+  Data In: enter text long 5 characters 
 
 
-  Data Out:
+  Data Out: if write the less then 5 characters, you will receive 'nope, try again.' message, if everything ok you will receive mirror text
 
 
-  Test Cases:
+  Test Cases: 
+  '12345' -> '54321'
+  '123' -> 'nope, try again.'
 
 
 */

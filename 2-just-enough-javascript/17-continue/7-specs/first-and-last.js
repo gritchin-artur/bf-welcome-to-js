@@ -31,11 +31,34 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+  output = prompt('Enter some text:');
+
+  if (!output) {
+    continue;
+  }
+
+  if (output.charAt(0) !== output.charAt(0).toUpperCase()) {
+    alert('Your text must starts with a capital letter!');
+    continue;
+  }
+
+  if (output.charAt(output.length - 1) !== '.') {
+    alert('Your text must ends with a period!');
+    continue;
+  }
+
+  if (output.length <= 2) {
+    alert('Your text must be longer then two characters!');
+    continue;
+  }
+
+  break;
+}
 
 /* --- alert the result --- */
 

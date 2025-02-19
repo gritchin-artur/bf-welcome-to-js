@@ -3,11 +3,11 @@
 /*
 
 
-  Data In:
+  Data In: say hello
 
-  Data Out:
+  Data Out: hello to you too!
 
-  Test Cases:
+  Test Cases: input === null, input === 'hello'
 
 */
 
@@ -30,3 +30,19 @@
 /* ---   ?   --- */
 
 // alert(message)
+
+let input = null;
+
+while (input === null) {
+  input = prompt('say hello');
+}
+
+let message = '';
+
+if (input === 'hello') {
+  message = 'hello to you too!';
+} else {
+  message = 'good bye';
+}
+
+alert(message);

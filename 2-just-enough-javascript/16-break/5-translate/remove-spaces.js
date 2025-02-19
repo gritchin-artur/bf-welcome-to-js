@@ -5,11 +5,13 @@
 /*
 
 
-  Data In:
+  Data In: enter something with at least one space, the spaces will be removed
 
-  Data Out:
+  Data Out: deleted all spaces
 
   Test Cases:
+  'Artur 123 -> Artur123',
+  'qwe' -> 'there must be a space!'
 
 */
 
@@ -43,3 +45,30 @@
 /* ---   ?   --- */
 
 // alert(input + ' -> ' + spaceless)
+
+let input = null;
+
+while (true) {
+  input = prompt(
+    'enter something with at least one space, the spaces will be removed',
+  );
+  if (input === null) {
+    alert('no escape');
+  } else if (input === '') {
+    alert('gotta enter something');
+  } else if (!input.includes(' ')) {
+    alert('there must be a space!');
+  } else {
+    break;
+  }
+}
+
+let spaceless = '';
+
+for (let char of input) {
+  if (char !== ' ') {
+    spaceless = spaceless + char;
+  }
+}
+
+alert(input + ' -> ' + spaceless);

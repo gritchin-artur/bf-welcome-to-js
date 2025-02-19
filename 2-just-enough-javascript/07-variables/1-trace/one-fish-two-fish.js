@@ -2,12 +2,12 @@
 
 'use strict';
 
-let phrase = ' ';
+let phrase = ' '; // declaration and initialization
+ 
+phrase = 'one' + phrase + 'fish'; // reassignment variable and padding
 
-phrase = 'one' + phrase + 'fish';
+phrase = phrase + ' two'; // reassignment variable and padding
 
-phrase = phrase + ' two';
+phrase = phrase + ' fish'; // reassignment variable and padding
 
-phrase = phrase + ' fish';
-
-console.log(phrase); // 'one fish two fish'
+console.log(phrase); // reading 'one fish two fish'

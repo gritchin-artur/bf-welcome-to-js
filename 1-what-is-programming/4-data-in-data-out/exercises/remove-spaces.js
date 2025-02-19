@@ -2,13 +2,14 @@
 
 /* Remove Spaces
 
-  Data In:
+  Data In: enter some text, all the spaces will be removed
 
 
   Data Out:
 
 
   Test Cases:
+'Artur Hrytchyn' -> before: 'Artur Hrytchyn' after: 'ArturHrytchyn'
 
 
 */

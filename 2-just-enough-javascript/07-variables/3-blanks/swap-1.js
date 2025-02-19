@@ -6,9 +6,9 @@ let a = 'bye';
 let b = 'hi';
 let temp;
 
-temp = a;
-a = b;
-b = temp;
+temp = a; // 'bye'
+a = b; // 'hi'
+b = temp; // 'bye'
 
 console.log('a:', a);
 console.log('b:', b);

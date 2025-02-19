@@ -12,9 +12,9 @@ let temp;
   this is done using 3 assignments
 */
 
-temp = a;
-a = b;
-b = temp;
+temp = a; // 'y'
+a = b; // 'x'
+b = temp; // 'y'
 
 /* 3. compare the final values
   all the comparisons should be true

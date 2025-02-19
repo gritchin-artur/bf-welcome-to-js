@@ -20,18 +20,18 @@ console.log('javascript'.toUpperCase().includes('SCRIPT')); // true
 //  fill in the blanks with something that will evaluate to true
 //  there's many different answers! how many can you find?
 
-console.log('PassPort'.toLowerCase().includes(_)); // true
-console.log('hACK YouR FuTuRE'.toLowerCase().includes(_)); // true
-console.log('_Robin_Batman'.toLowerCase().includes(_)); // true
+console.log('PassPort'.toLowerCase().includes('port')); // true
+console.log('hACK YouR FuTuRE'.toLowerCase().includes('your')); // true
+console.log('_Robin_Batman'.toLowerCase().includes('robin')); // true
 
-console.log('PassPort'.toUpperCase().includes(_)); // false
-console.log('hACK YouR FuTuRE'.toUpperCase().includes(_)); // false
-console.log('_Robin_Batman'.toUpperCase().includes(_)); // false
+console.log('PassPort'.toUpperCase().includes('port')); // false
+console.log('hACK YouR FuTuRE'.toUpperCase().includes('fUtUrE')); // false
+console.log('_Robin_Batman'.toUpperCase().includes('bATMAN')); // false
 
-console.log(_.toLowerCase().includes('tim')); // true
-console.log(_.toLowerCase().includes('o w')); // true
-console.log(_.toLowerCase().includes('. e')); // true
+console.log('name Tim'.toLowerCase().includes('tim')); // true
+console.log('No World'.toLowerCase().includes('o w')); // true
+console.log('1. eat'.toLowerCase().includes('. e')); // true
 
-console.log(_.toUpperCase().includes('TIM')); // true
-console.log(_.toUpperCase().includes('O W')); // true
-console.log(_.toUpperCase().includes('. E')); // true
+console.log('Name Tim'.toUpperCase().includes('TIM')); // true
+console.log('No World'.toUpperCase().includes('O W')); // true
+console.log('1. eat'.toUpperCase().includes('. E')); // true

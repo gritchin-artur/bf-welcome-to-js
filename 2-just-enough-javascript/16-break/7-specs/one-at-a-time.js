@@ -19,12 +19,40 @@
 console.log('--- begin program ---');
 
 /* --- declare initial output --- */
-
-let output = _;
+let input = '';
+let output = '';
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+  input = prompt('Please enter a single character:');
+
+  if (input === null) {
+    alert('You should enter some text!');
+    continue;
+  }
+
+  if (input === '') {
+    alert('You should enter a non-empty string!');
+    continue;
+  }
+
+  if (input.length > 1) {
+    alert('You should enter only one character!');
+    continue;
+  }
+
+  let isConfirmed = confirm('Do you want to enter another character?');
+
+  if (isConfirmed) {
+    output += input;
+  }
+
+  if (!isConfirmed) {
+    output += input;
+    break;
+  }
+}
 
 /* --- alert the result --- */
 

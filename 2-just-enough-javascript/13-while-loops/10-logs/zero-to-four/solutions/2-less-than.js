@@ -1,7 +1,10 @@
 'use strict';
 
+let hello = 'hello';
+
 let step = 0;
-while (__ < __) {
+while (step < 1) {
   console.log(step);
-  __;
+  alert(hello);
+  step++;
 }

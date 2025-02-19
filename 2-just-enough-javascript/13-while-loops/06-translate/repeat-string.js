@@ -5,11 +5,14 @@
 /*
 
 
-  Data In:
+  Data In: enter some text
 
-  Data Out:
+  Data Out: repeated = repeated + '\n' + input;
 
-  Test Cases:
+  Test Cases: 
+  input === null,
+  i < input.length
+
 
 */
 
@@ -35,3 +38,20 @@
 /* ---   ?   --- */
 
 // alert(repeated)
+
+let input = null;
+
+while (input === null) {
+  input = prompt('enter some text');
+}
+
+let repeated = '';
+
+let i = 0;
+
+while (i < input.length) {
+  repeated = repeated + '\n' + input;
+  i = i + 1;
+}
+
+alert(repeated);

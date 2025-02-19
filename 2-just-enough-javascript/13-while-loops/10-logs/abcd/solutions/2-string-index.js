@@ -2,5 +2,13 @@
 
 let letters = 'abcd';
 
+let characters = '';
+
 let index = 0;
-while (__ < __.__) {}
+
+while (index <= letters.length - 1) {
+  let el = letters.split('')[index];
+  characters = characters + el;
+  console.log(characters);
+  index++;
+}

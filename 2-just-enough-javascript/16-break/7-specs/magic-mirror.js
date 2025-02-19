@@ -29,18 +29,35 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
+let input = '';
+
+while (true) {
+  input = prompt('Enter some text:');
+
+  if (input) {
+    break;
+  }
+}
 console.log('input:', input);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
+
+let mirrored = '';
+
+let pattern = /[a-z]/i;
 
 /* --- create final output --- */
 
-for (let _ of _) {
+for (let char of input) {
+  if (pattern.test(char)) {
+    output += char;
+    mirrored = char + mirrored;
+  }
 }
+
+output = `${output} | ${mirrored}`;
 
 /* --- alert the result --- */
 

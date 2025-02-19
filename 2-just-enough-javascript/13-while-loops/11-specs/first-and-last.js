@@ -30,11 +30,22 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = null;
 
 /* --- create final output --- */
 
-while (_) {}
+while (
+  output === null ||
+  output.length < 2 ||
+  output.charAt(0) !== output.charAt(0).toUpperCase() ||
+  output[output.length - 1] !== '.'
+) {
+  output = prompt(
+    'Enter text that starts with a capital letter and ends with a period:',
+  );
+}
+
+output = output.slice(0, -1).toLowerCase();
 
 /* --- alert the result --- */
 

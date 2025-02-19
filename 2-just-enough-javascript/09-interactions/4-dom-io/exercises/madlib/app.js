@@ -11,7 +11,17 @@ whenFormDataChanges('______', () => {
 
   // --- read user input ---
 
-  // --- create a funny sentence ---
+  let noun = readString('noun');
 
-  // --- display the sentence ---
+  let verb = readString('verb');
+
+  let adjective = readString('adjective');
+
+  // --- create a message ---
+
+  let message = `On ${adjective} days the ${noun} will always ${verb}.`;
+
+  // --- display the message ---
+
+  displayString('secret-solution', message);
 });

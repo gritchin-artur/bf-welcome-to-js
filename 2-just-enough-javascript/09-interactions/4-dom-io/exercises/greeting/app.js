@@ -11,7 +11,15 @@ whenFormDataChanges('______', () => {
 
   // --- read user input ---
 
+  let first = readString('first');
+
+  let last = readString('last');
+
   // --- create a greeting ---
 
+  let greeting = `Hello, ${first} ${last} .`;
+
   // --- display the greeting ---
+
+  displayString('secret-solution', greeting);
 });

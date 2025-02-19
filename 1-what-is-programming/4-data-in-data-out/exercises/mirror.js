@@ -2,13 +2,15 @@
 
 /* Mirror
 
-  Data In:
+  Data In: enter some text to mirror
 
 
-  Data Out:
+  Data Out: mirrored text
 
 
   Test Cases:
+  
+  'Artur' -> 'rutrA | Artur'
 
 
 */

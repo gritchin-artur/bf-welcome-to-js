@@ -3,20 +3,14 @@
 // prettier-ignore
 { // so prettier does not remove the extra spacing
 
-
 'use strict';
 
+let firstName = 'Pieter'; // declaration and initialization
 
-let firstName = 'Pieter';
+let greeting = 'hello ' + firstName + '!'; // declaration and initialization
 
+greeting = 'good bye ' + firstName + '.'; // variable reassignment
 
-let greeting = 'hello ' + firstName + '!';
-
-
-greeting = 'good bye ' + firstName + '.';
-
-
-console.log(greeting);
-
+console.log(greeting); // reading variable
 
 }

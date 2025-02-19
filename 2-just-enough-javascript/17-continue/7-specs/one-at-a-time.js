@@ -20,11 +20,36 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
+let input = '';
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+  input = prompt('Enter single character:');
+
+  if (!input) {
+    alert('Shoud enter single character!');
+    continue;
+  }
+
+  if (input.length > 1) {
+    alert('Shoud enter single character!');
+    continue;
+  }
+
+  if (input.length === 1) {
+    output += input;
+  }
+
+  let isConfirmed = confirm('Do you want to continue!');
+
+  if (isConfirmed) {
+    continue;
+  }
+
+  break;
+}
 
 /* --- alert the result --- */
 

@@ -5,11 +5,11 @@
 /* Has an "x"
 
 
-  Data In:
+  Data In: enter something, the program will check if it has an "x"
 
-  Data Out:
+  Data Out: message <- message + 'has at least one "x"' or message <- message + 'does not have a single "x"'
 
-  Test Cases:
+  Test Cases: input.includes('x')
 
 */
 
@@ -31,3 +31,19 @@
 /* ---  ?  --- */
 
 // alert(message)
+
+let input = null;
+
+while (input === null) {
+  input = prompt('enter something, the program will check if it has an "x"');
+}
+
+let message = '';
+
+if (input.includes('x')) {
+  message = message + 'has at least one "x"';
+} else {
+  message = message + 'does not have a single "x"';
+}
+
+alert(message);

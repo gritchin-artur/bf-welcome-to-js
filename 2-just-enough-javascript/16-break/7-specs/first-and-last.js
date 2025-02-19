@@ -31,11 +31,34 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let input = null;
+let output = '';
 
 /* --- create final output --- */
 
-while (_) {}
+while (
+  !input ||
+  input.length < 2 ||
+  !/[A-Z]/u.test(input.charAt(0)) ||
+  input.charAt(input.length - 1) !== '.'
+) {
+  input = prompt(
+    'Please enter text that starts with a capital letter and ends with a period:',
+  );
+}
+
+let i = 1;
+
+for (let char of input) {
+  if (i === 1) {
+    output += char.toLowerCase();
+  } else if (i !== input.length) {
+    output += char;
+  } else {
+    break;
+  }
+  i++;
+}
 
 /* --- alert the result --- */
 

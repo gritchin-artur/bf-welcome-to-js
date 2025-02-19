@@ -29,14 +29,24 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = prompt(_);
+let input = prompt('enter something:');
 console.log('input:', input);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
+
+if (!input) {
+  output = ':(';
+} else if (input.length < 10) {
+  output = `${output} is ${10 - input.length} characters too short`;
+} else if (input.length === 10) {
+  output = `${output}  is perfect`;
+} else {
+  output = `${output}is ${input.length - 10} characters too long`;
+}
 
 /* --- alert the result --- */
 

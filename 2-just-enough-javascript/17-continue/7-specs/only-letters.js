@@ -24,11 +24,20 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
+let pattern = /[^a-z]/i;
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+  output = prompt('Enter some text:');
+
+  if (!output || pattern.test(output)) {
+    continue;
+  }
+
+  break;
+}
 
 /* --- alert the result --- */
 

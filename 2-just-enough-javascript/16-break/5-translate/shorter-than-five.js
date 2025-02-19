@@ -5,11 +5,13 @@
 /*
 
 
-  Data In:
+  Data In: enter something shorter than 5 characters
 
-  Data Out:
+  Data Out: tell you if the shorter then 5 characters or not
 
   Test Cases:
+'1234' -> '1234',
+'123456' -> 'your input is too long'
 
 */
 
@@ -31,3 +33,19 @@
 /* ---   ?   --- */
 
 // alert(input)
+
+let input = '';
+
+while (true) {
+  input = prompt('enter something shorter than 5 characters');
+
+  if (input === null) {
+    alert('there is no escape');
+  } else if (input.length > 4) {
+    alert('your input is too long');
+  } else {
+    break;
+  }
+}
+
+alert(input);

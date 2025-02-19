@@ -3,11 +3,11 @@
 /* Be Excited
 
 
-  Data In:
+  Data In: enter something, it will become excited
 
-  Data Out:
+  Data Out: add '!' to the entered text
 
-  Test Cases:
+  Test Cases: input[input.length - 1] !== '!'
 
 */
 
@@ -28,3 +28,17 @@
 /* ---  ?  --- */
 
 // alert(output)
+
+let input = null;
+
+while (input === null) {
+  input = prompt('enter something, it will become excited');
+}
+
+let output = input;
+
+if (input[input.length - 1] !== '!') {
+  output = output + '!';
+}
+
+alert(output);

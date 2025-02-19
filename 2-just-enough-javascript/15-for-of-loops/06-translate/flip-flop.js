@@ -5,11 +5,11 @@
 /*
 
 
-  Data In:
+  Data In: prompt('enter something to flipflop')
 
-  Data Out:
+  Data Out: flip text
 
-  Test Cases:
+  Test Cases: 'Name' -> 'aNem'
 
 */
 
@@ -45,3 +45,34 @@
 /* ---   ?   --- */
 
 // alert(flipFlopped)
+
+/* --- declare initial output --- */
+
+let normalPhrase = null;
+
+/* --- create final output --- */
+
+while (normalPhrase === null) {
+  normalPhrase = prompt('enter something to flipflop');
+}
+
+let previous = '';
+
+let flipFlopped = '';
+
+for (let current of normalPhrase) {
+  if (previous !== '') {
+    flipFlopped = flipFlopped + current + previous;
+    previous = '';
+  } else {
+    previous = current;
+  }
+}
+
+if (flipFlopped.length < normalPhrase.length) {
+  flipFlopped = flipFlopped + normalPhrase[normalPhrase.length - 1];
+}
+
+/* --- alert the result --- */
+
+alert(flipFlopped);

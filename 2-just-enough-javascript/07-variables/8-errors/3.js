@@ -7,5 +7,6 @@
 let favoriteVegetable = 'potato';
 console.log(favoriteVegetable); // 'potato'
 
-let favoriteVegetable = 'carrot';
+// let favoriteVegetable = 'carrot';
+favoriteVegetable = 'carrot'; // remove extra let
 console.log(favoriteVegetable); // 'carrot'
