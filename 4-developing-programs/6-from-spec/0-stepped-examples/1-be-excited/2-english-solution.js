@@ -35,3 +35,17 @@
 /*
   display the new string to the user
 */
+
+let input = '';
+
+while (true) {
+  input = prompt('it will have an "!" added to the end:');
+
+  if (input === null) {
+    continue;
+  }
+
+  break;
+}
+
+alert(input + '!');

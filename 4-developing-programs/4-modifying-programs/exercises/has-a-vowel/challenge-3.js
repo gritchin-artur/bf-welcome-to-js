@@ -14,18 +14,19 @@ while (characters === null) {
   characters = prompt('enter some characters');
 }
 
-const vowels = 'aeiouAEIOU';
+const consonants = 'BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz'; // replaced vowles to consonants
 
 let hasAVowel = false;
 for (const char of characters) {
-  if (vowels.includes(char)) {
+  if (consonants.toLowerCase().includes(char)) {
+    // replaced vowles to consonants
     hasAVowel = true;
     break;
   }
 }
 
 if (hasAVowel) {
-  alert('"' + characters + '" has at least one vowel');
+  alert('"' + characters + '" has at least one consonants'); // replaced vowles to consonants
 } else {
-  alert('"' + characters + '" has no vowels');
+  alert('"' + characters + '" has no consonants'); // replaced vowles to consonants
 }

@@ -25,10 +25,26 @@
 /* --- gather user input --- */
 // Data In:     null or a string
 // Data After:  a non-empty string
+let input = '';
 
 /* --- create the final message --- */
 // Data Before: a non-empty string
 // Data After:  a message describing the string as long or short
 
+while (true) {
+  input = prompt('Please enter some text:');
+
+  if (input === '' || input === null) {
+    continue;
+  }
+  break;
+}
+
 /* --- display the message for the user --- */
 // Data Out:    a message describing the string as long or short
+
+if (input.length > 7) {
+  alert('too long');
+} else if (input.length < 7) {
+  alert('too short');
+}

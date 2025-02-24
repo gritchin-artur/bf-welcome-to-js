@@ -11,17 +11,27 @@
 */
 
 let mayHaveDuplicates = null;
-while (mayHaveDuplicates === null) {
-  mayHaveDuplicates = prompt('enter something with no duplicate characters');
-}
-
 let hasNoDuplicates = '';
-for (let char of mayHaveDuplicates) {
-  let isDuplicate = hasNoDuplicates.includes(char);
-  if (isDuplicate) {
-    break;
+
+while (true) {
+  //replaced condition to "true"
+  mayHaveDuplicates = prompt('enter something with no duplicate characters');
+
+  if (mayHaveDuplicates === null) {
+    // added condition
+    continue;
   }
-  hasNoDuplicates = hasNoDuplicates + char;
+
+  for (let char of mayHaveDuplicates) {
+    // moved this loop
+    let isDuplicate = hasNoDuplicates.includes(char);
+    if (isDuplicate) {
+      break;
+    }
+    hasNoDuplicates = hasNoDuplicates + char;
+    continue;
+  }
+  break; // added "break"
 }
 
 if (hasNoDuplicates.length === mayHaveDuplicates.length) {

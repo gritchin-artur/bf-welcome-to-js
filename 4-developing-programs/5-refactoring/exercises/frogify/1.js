@@ -21,12 +21,10 @@ let frogged = '';
 for (const character of toBeFrogged) {
   if (character === 'f') {
     frogged = frogged + 'frog';
-    continue;
-  }
+  } // removed continue
   if (character === 'F') {
     frogged = frogged + 'FROG';
-    continue;
-  }
+  } // removed continue
   frogged = frogged + character;
 }
 

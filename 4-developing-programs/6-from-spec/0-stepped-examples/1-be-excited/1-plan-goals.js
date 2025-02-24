@@ -23,3 +23,16 @@
 
 /* --- display the string to the user --- */
 //  Data Out:  an excited string
+
+let input = '';
+
+while (true) {
+  input = prompt('it will have an "!" added to the end:');
+
+  if (input === null) {
+    continue;
+  }
+
+  alert(input + '!');
+  break;
+}

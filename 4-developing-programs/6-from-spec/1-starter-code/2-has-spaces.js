@@ -35,9 +35,9 @@
 
 //  Data In:    a string or null
 
-_;
-while (_) {
-  _;
+let input = null;
+while (input === null) {
+  input = prompt('Enter some text:');
 }
 
 //  Data After:   the first string provided by the user
@@ -46,7 +46,7 @@ while (_) {
 
 // Data Before:   nothing!  This step does not use data from a previous goal
 
-_;
+let spase = ' ';
 
 // Data After:    a string with the character(s) to search for
 
@@ -56,13 +56,14 @@ _;
 //                1) the user's input
 //                2) the characters to search for
 
-_;
-for (const _ of _) {
-  if (_) {
-    _;
-    _;
+let isSpase = false;
+for (const char of input) {
+  if (char === spase) {
+    isSpase = true;
+    break;
   }
 }
+
 // Data After:    a boolean value
 //                true if the input contained at least one space
 //                false if the input had no spaces
@@ -70,15 +71,15 @@ for (const _ of _) {
 /* --- create a message for the user --- */
 
 // Data Before:  a boolean value representing the search results
-_;
-if (_) {
-  _;
+let output = '';
+if (isSpase) {
+  output = `"${input}" has at least one space'`;
 } else {
-  _;
+  output = `"${input}" has no spaces'`;
 }
 // Data After:  a message saying if there were any spaces in the text
 
 /* --- display the message for the user --- */
 
 // Data Out:    a final message for the user
-_;
+alert(output);

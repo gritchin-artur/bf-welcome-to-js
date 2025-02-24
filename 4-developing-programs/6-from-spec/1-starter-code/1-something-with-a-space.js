@@ -35,23 +35,26 @@
 
 /* --- gather user input --- */
 //  Data In:      a string or null
-_;
+let input = '';
 //  Data After:   the user's input (string or null)
-
+input = prompt('Enter something:');
 /* --- create a message for the user --- */
 
 //  Data Before:  the user's input (string or null)
-_;
-if (_) {
+let output = '';
+if (input === null) {
   /* --- the user canceled --- */
-} else if (_) {
+  output = 'why did you cancel?';
+} else if (input.includes(' ')) {
   /* --- the input has at least one space --- */
+  output = `"${input}" has at least one space`;
 } else {
   /* --- the input has no spaces --- */
+  output = `"${input}" has no spaces'`;
 }
 //  Data After:   a message describing the user's input
 
 /* --- alert the message to the user --- */
 
 //  Data Out:     the user's message
-_;
+alert(output);

@@ -44,6 +44,7 @@ for (const character of sentence) {
   } else {
     nextWord = nextWord + character;
   }
+  continue; // added continue
 }
 
 alert(newSentence);

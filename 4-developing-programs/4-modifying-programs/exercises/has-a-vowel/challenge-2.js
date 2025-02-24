@@ -17,14 +17,15 @@ const vowels = 'aeiouAEIOU';
 
 let hasAVowel = false;
 for (const char of characters) {
-  if (vowels.includes(char)) {
+  if (!vowels.includes(char)) {
+    // aded "!"
     hasAVowel = true;
     break;
   }
 }
 
 if (hasAVowel) {
-  alert('"' + characters + '" has at least one vowel');
+  alert('"' + characters + '" has at least one consonants'); // replased vowles to consonants
 } else {
-  alert('"' + characters + '" has no vowels');
+  alert('"' + characters + '" has no consonants'); // replased vowles to consonants
 }

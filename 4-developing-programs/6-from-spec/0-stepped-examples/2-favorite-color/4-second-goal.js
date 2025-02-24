@@ -56,3 +56,5 @@ console.log(message);
 
 /* --- display the message for the user --- */
 // Data Out:    a message describing the string as long or short
+
+alert(message);

@@ -19,10 +19,10 @@ while (!longEnough) {
   if (phrase === null) {
     alert('there is no escape');
   } else if (phrase.length <= limit) {
-    alert('too short');
+    longEnough = true; // swap "alert('too short');" to "longEnough = true;"
   } else {
-    longEnough = true;
+    alert('too long'); // swap "longEnough = true;" to "alert('too long');"
   }
 }
 
-alert('"' + phrase + '" is ' + phrase.length + ' characters long');
+alert('"' + phrase + '" is ' + phrase.length + ' characters shorter'); //replaced shorter to longer
