@@ -12,3 +12,14 @@
     'JS'    -> 'JS!'
     'hello' -> 'hello!'
 */
+
+while (true) {
+  let input = prompt('Please enter some text:');
+
+  if (input === null) {
+    continue;
+  }
+
+  alert(input + '!');
+  break;
+}

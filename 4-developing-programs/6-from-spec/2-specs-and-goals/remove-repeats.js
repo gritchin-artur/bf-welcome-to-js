@@ -33,13 +33,29 @@
 */
 
 /* --- gather user input --- */
+let input = null;
+while (input === null) {
+  input = prompt('Enter some text:');
+}
 
 /* --- check if the input has any repeated characters --- */
 
 //  store the string with no repeats for later
 
+let checked = '';
+for (let char of input) {
+  if (checked.includes(char)) {
+    continue;
+  } else {
+    checked += char;
+  }
+}
+
 /* --- create a message for the user --- */
+
+let message = `${input} -> ${checked}`;
 
 //  you can compare the input to the string without repeats
 
 /* --- display the message to the user --- */
+alert(message);

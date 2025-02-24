@@ -17,17 +17,18 @@ while (toBeFrogged === null) {
 }
 
 let frogged = '';
+let i = 0; // added "i" variable
 
-for (const character of toBeFrogged) {
-  if (character === 'f') {
+while (i < toBeFrogged.length) {
+  if (toBeFrogged[i] === 'f') {
     frogged = frogged + 'frog';
-    continue;
   }
-  if (character === 'F') {
+
+  if (toBeFrogged[i] === 'F') {
     frogged = frogged + 'FROG';
-    continue;
   }
-  frogged = frogged + character;
+  frogged = frogged + toBeFrogged[i];
+  i++; // added "i++"
 }
 
 alert(frogged);

@@ -33,11 +33,33 @@
 */
 
 /* --- gather user input --- */
-
+let input = null;
+while (input === null) {
+  input = prompt('Enter some text:');
+}
 /* --- check if the input has any repeated characters --- */
 
 //  store the search results as a boolean
+let isRepeats = false;
+let checked = '';
+for (let char of input) {
+  if (checked.includes(char)) {
+    isRepeats = true;
+    break;
+  } else {
+    checked += char;
+    continue;
+  }
+}
 
 /* --- create a message for the user --- */
+let output = '';
+if (isRepeats) {
+  output = `"${input}" has at least one repeat`;
+} else {
+  output = `"${input}" has no repeats`;
+}
 
 /* --- display the message to the user --- */
+
+alert(output);

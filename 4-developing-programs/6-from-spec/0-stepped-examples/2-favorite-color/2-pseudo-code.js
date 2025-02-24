@@ -39,6 +39,19 @@
 //   :END IF
 // :END WHILE
 
+let input = '';
+
+while (true) {
+  input = prompt('enter a word');
+  if (input === null) {
+    alert('no canceling!');
+  } else if (input === '') {
+    alert('empty input is not allowed');
+  } else {
+    break;
+  }
+}
+
 /* --- create the final message --- */
 // Data Before: a non-empty string
 // Data After:  a message describing the string as long or short
@@ -50,7 +63,16 @@
 //   message <- message + ' is a short word'
 // :END IF
 
+let message = '"' + input + '"';
+if (input.length >= 7) {
+  message = message + ' is a long word';
+} else {
+  message = message + ' is a short word';
+}
+
 /* --- display the message for the user --- */
 // Data Out:    a message describing the string as long or short
 
 // alert(message)
+
+alert(message);

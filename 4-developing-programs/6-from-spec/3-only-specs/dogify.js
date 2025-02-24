@@ -35,3 +35,22 @@
       'Do dump'     ->  'DOGo dogump'
       'dim mooD'    -> 'dogim mooDOG'
 */
+
+let input = null;
+while (input === null) {
+  input = prompt('Enter some text:');
+}
+
+let output = '';
+
+for (let char of input) {
+  if (char === 'd') {
+    output += 'dog';
+  } else if (char === 'D') {
+    output += 'DOG';
+  } else {
+    output += char;
+  }
+}
+
+alert(output);

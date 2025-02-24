@@ -34,4 +34,4 @@ console.log(output);
 /* --- display the string to the user --- */
 //  Data Out:  an excited string
 
-// alert(output)
+alert(output);

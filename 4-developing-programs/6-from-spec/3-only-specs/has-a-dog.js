@@ -25,3 +25,18 @@
       'GOdoGO'      ->  'at least one dog'
       'A fast dog.' ->  'at least one dog'
 */
+
+let input = null;
+while (input === null) {
+  input = prompt('Enter some text:');
+}
+
+let output = '';
+
+if (input.toLowerCase().includes('dog')) {
+  output = 'at least one dog';
+} else {
+  output = 'no dogs';
+}
+
+alert(output);

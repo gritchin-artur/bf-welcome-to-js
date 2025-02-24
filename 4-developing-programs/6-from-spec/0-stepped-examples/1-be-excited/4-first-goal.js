@@ -20,9 +20,10 @@
 let input = null;
 while (input === null) {
   input = prompt('enter something');
-  console.log(input);
 }
-console.log(input);
+
+let output = input + '!';
+alert(output);
 
 /* --- make the string excited --- */
 //  Data Before:  the user's string

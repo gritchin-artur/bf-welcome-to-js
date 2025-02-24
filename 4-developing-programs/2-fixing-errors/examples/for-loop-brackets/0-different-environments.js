@@ -24,23 +24,25 @@
 
 */
 
-
-
 /*
   environment: Chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Unexpected token
 
   callstack:
 
-  life cycle:
+  life cycle: 
 
-  the mistake:
+  the mistake: missing left curly brace
 
-  the fix(es):
+  the fix(es): add left curly brace to the line 44
 */
 
-for (let i = 0; i < 5; i++)
+// for (let i = 0; i < 5; i++)
+//   console.log(i);
+// }
+
+for (let i = 0; i < 5; i++) {
   console.log(i);
 }

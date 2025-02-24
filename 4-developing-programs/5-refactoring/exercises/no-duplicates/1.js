@@ -21,8 +21,12 @@ for (let char of mayHaveDuplicates) {
   hasNoDuplicates = hasNoDuplicates + char;
 }
 
+let message = ''; // created variable "message"
+
 if (hasNoDuplicates.length === mayHaveDuplicates.length) {
-  alert('well done!');
+  message = 'well done!'; // replace "alert" to reassign "message"
 } else {
-  alert('too bad, try again');
+  message = 'too bad, try again'; // replace "alert" to reassign "message"
 }
+
+alert(message); // created "alert"

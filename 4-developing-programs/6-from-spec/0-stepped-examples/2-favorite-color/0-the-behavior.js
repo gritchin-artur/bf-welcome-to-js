@@ -21,3 +21,20 @@
       'jello' -> '"jello" is a short word'
       'hi' -> '"hi" is a short word'
 */
+
+let input = '';
+
+while (true) {
+  input = prompt('Please enter some text:');
+
+  if (input === '' || input === null) {
+    continue;
+  }
+  break;
+}
+
+if (input.length > 7) {
+  alert('too long');
+} else if (input.length < 7) {
+  alert('too short');
+}
